@@ -1,0 +1,21 @@
+<h1>Результаты поиска</h1>
+
+<div class="container">
+  <div class="row">
+
+    <% if @emps != nil %>
+        <% @emps.each do |emp| %>
+            <div class="col-md-4" class="search-col">
+              <%=link_to emp.name, emp %>
+            </div>
+        <% end %>
+    <% else %>
+        <p>Ничего не найдено по запросу...</p>
+    <% end %>
+
+
+
+  </div>
+</div>
+
+

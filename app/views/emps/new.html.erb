@@ -1,0 +1,17 @@
+<h1 class="text-center">Регистрация</h1>
+<div class="row">
+  <div class="col-md-12 text-center">
+    <div class="register-div">
+      <div class="register-form-tags">
+<%= form_for(:emp, :url => {:controller => 'emps', :action => 'create'}) do |f| %>
+   <p> <%= f.label "Имя*:" %></br> <%= f.text_field :name %></p>
+   <p> <%= f.label "Возраст:"%></br>  <%= f.text_field :age%></p>
+   <p> <%= f.label "Город:" %></br>  <%= f.text_field :city %></p>
+   <p> <%= f.label "E-mail*:" %></br>   <%= f.text_field :email%></p>
+   <p> <%= f.label "Пароль*:" %></br>   <%= f.text_field :password%></p>
+    <%= f.submit("Зарегестрироваться") %>
+<% end %>
+      </div>
+    </div>
+  </div>
+</div>

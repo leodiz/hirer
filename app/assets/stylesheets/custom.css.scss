@@ -1,0 +1,39 @@
+@import "bootstrap";
+
+h1{
+  font-size: 19pt;
+}
+.search-text {
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.search-text:focus,
+.search-text.focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.resume.col-md-3{
+  background: #dddddd;
+  margin-right: 10px;
+  padding: 10px;
+
+}
+.resume.col-md-3 li{
+ list-style-type: none;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.field_with_errors input{
+  background: #dd9d90;
+}
+
+.register-div{ display: inline-block;}
+.register-form-tags{text-align: left}
+
+.img-container { float: left; width: 75px; height: 75px; overflow: hidden; margin-right: 10px; }
+.img-container img { width: 100%; }

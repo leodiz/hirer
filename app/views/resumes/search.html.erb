@@ -1,0 +1,23 @@
+<h1 class="text-center">Результаты поиска</h1>
+<div class="container">
+  <div class="row">
+    <% if @resumes != nil %>
+        <% @resumes.each do |resume| %>
+            <%= div_for resume, class: "resume col-md-3" do %>
+                <div class="img-container">
+                  <%= link_to (image_tag resume.emp.photo.path, alt: resume.emp.photo.title, class: "img-responsive img-profile"),resume %>
+                </div>
+                <ul>
+                  <li><%= link_to resume.emp.name, resume %></li>
+                  <li><%= resume.skills %></li>
+                  <li><%= resume.city %></li>
+
+                </ul>
+            <% end %>
+        <% end %>
+    <% else %>
+        <p>Ничего не найдено по запросу...</p>
+    <% end %>
+  </div>
+</div>
+
